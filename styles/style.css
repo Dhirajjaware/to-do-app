@@ -1,12 +1,13 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   background-color: #191825;
   text-align: center;
 }
-#to-do-app {
+#application {
   color: white;
   overflow: hidden;
   padding: 2rem;
@@ -39,22 +40,23 @@ body {
   border-bottom: 5px solid white;
   /* transition: all 1s; */
 }
-.btn-add-task {
+.btn__add-task {
   background-color: rgb(181, 35, 78);
   color: #fff;
-  padding: 7px;
-  font-size: 1.7rem;
+  padding: 4px;
+  font-size: 1.3rem;
   font-weight: 600;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
   margin: 2rem;
+  border: none;
 }
-.btn-add-task:hover {
+.btn__add-task:hover {
   background-color: rgb(208, 22, 78);
 }
-.task-here {
+.user__task-list {
   color: #fff;
   padding: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 550;
   font-family: monospace;
 }
