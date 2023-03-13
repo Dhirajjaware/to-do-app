@@ -18,7 +18,8 @@ html {
 }
 .input__form,
 .input__task {
-  font-size: 1.3rem;
+  width: 20rem;
+  font-size: 1.2rem;
   font-family: sans-serif;
   font-weight: 500;
   background: none;
@@ -28,21 +29,4 @@ html {
 }
 .input__task:hover {
   border-bottom: 5px solid white;
-  /* transition: all 1s; */
-}
-
-#user__task-list {
-  padding: 1rem;
-  border-bottom-style: solid;
-  display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
-}
-.icon__close {
-  font-size: 1.3rem;
-  cursor: pointer;
-}
-.icon__close:hover {
-  transition: 0.1s;
-  opacity: 0.5;
 }
