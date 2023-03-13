@@ -13,19 +13,17 @@ btnAddTask.addEventListener('click', function (e) {
   const options = {
     hour: 'numeric',
     minute: 'numeric',
-    second: 'numeric'
-  }
+  };
   if (inputTask.value) {
-
-
     //Create div
     const taskDiv = document.createElement('div');
-    taskDiv.innerHTML = `<div class="alert alert-info d-flex justify-content-between" role="alert">
+    taskDiv.style.backgroundColor = '#C04A82'
+    taskDiv.innerHTML = `<div class="alert  d-flex justify-content-between task" role="alert">
     <p class="fs-5">${Intl.DateTimeFormat('en-IN').format(now)}</p> 
-    <p class="fs-5">${Intl.DateTimeFormat('en-IN',options).format(now)}</p>
-    <h4 class ="text-primary">${inputTask.value}
-    </h4>
-    <button type="button" class="btn-close fs-5" data-bs-dismiss="alert" aria-label="Close"></button>
+    <p class="fs-5">${Intl.DateTimeFormat('en-IN', options).format(now)}</p>
+    <p class ="fs-5">${inputTask.value}
+    </p>
+    <button type="button" class="btn-close fs-6" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     `;
 
@@ -39,13 +37,13 @@ btnAddTask.addEventListener('click', function (e) {
 
     inputTask.value = '';
   } else {
-    const alertDiv = document.createElement('div');
-    alertDiv.innerHTML = `<div class="alert alert-danger" role="alert">
+    const messageAlert = document.createElement('div');
+    messageAlert.innerHTML = `<div class="alert alert-danger text-center" role="alert">
    Please enter your task first!
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
   </div>`;
 
-    app.prepend(alertDiv);
+    app.prepend(messageAlert);
   }
 });

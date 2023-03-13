@@ -6,7 +6,6 @@ html {
   color: white;
   padding: 1rem;
   height: auto;
-  text-align: center;
 }
 .navbar,
 .nav__heading {
@@ -18,7 +17,7 @@ html {
 }
 .input__form,
 .input__task {
-  width: 20rem;
+  width: 15rem;
   font-size: 1.2rem;
   font-family: sans-serif;
   font-weight: 500;

@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://kit.fontawesome.com/4e32ddf12b.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do-App</title>
+    <!-- css -->
     <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- boostrap css -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
     />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
 
-    <!-- javascript -->
+    <!-- javascript css -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </head>
   <body>
+    <!-- app -->
     <section id="application">
       <div class="container text-center">
+        <!-- Heading -->
         <h1 class="nav__heading">
           <span style="color: rgb(3, 255, 213)">T</span>o Do List
         </h1>
-
-        <!-- User input field -->
-        <form id="input__form" class="text-center">
+        <!-- User input task field -->
+        <form id="input__form">
           <input type="search" class="input__task" />
         </form>
-        <button type="button" class="btn btn-primary mt-3 btn__add-task">Add Task</button>
+        <!-- button add task -->
+        <button type="button" class="btn btn-primary mt-4 fs-5 btn__add-task">Add Task</button>
       </div>
       <hr />
+      <!-- label message and button -->
       <div class="user__task-list text-center d-flex justify-content-evenly">
-        <h3>Your Task List</h3> <button class="btn btn-danger btn__clear">Clear All</button>
+        <!-- clear all -->
+        <h3>Your Task List</h3> <button class="btn btn-danger fs-5 btn__clear">Clear All</button>
       </div>
       <hr />
         </div>
-        
     </section>
     <script src="scripts/script.js"></script>
   </body>
