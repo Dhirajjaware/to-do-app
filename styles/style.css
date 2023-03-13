@@ -1,24 +1,15 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-body {
+html {
   background-color: #191825;
-  text-align: center;
 }
 #application {
+  background-color: #191825;
   color: white;
-  overflow: hidden;
-  padding: 2rem;
-}
-.navbar {
-  width: 100%;
+  padding: 1rem;
+  height: auto;
   text-align: center;
 }
 .navbar,
 .nav__heading {
-  font-family: sans-serif;
   font-size: 3rem;
   padding: 1rem;
 }
@@ -27,36 +18,31 @@ body {
 }
 .input__form,
 .input__task {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-family: sans-serif;
   font-weight: 500;
   background: none;
   color: #fff;
   border: none;
   border-bottom: 5px solid rgba(255, 255, 255, 0.522);
-  padding: 0 1rem;
 }
 .input__task:hover {
   border-bottom: 5px solid white;
   /* transition: all 1s; */
 }
-.btn__add-task {
-  background-color: rgb(181, 35, 78);
-  color: #fff;
-  padding: 4px;
+
+#user__task-list {
+  padding: 1rem;
+  border-bottom-style: solid;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.icon__close {
   font-size: 1.3rem;
-  font-weight: 600;
-  border-radius: 0.2rem;
-  margin: 2rem;
-  border: none;
+  cursor: pointer;
 }
-.btn__add-task:hover {
-  background-color: rgb(208, 22, 78);
-}
-.user__task-list {
-  color: #fff;
-  padding: 10px;
-  font-size: 1.5rem;
-  font-weight: 550;
-  font-family: monospace;
+.icon__close:hover {
+  transition: 0.1s;
+  opacity: 0.5;
 }
