@@ -1,20 +1,23 @@
 html {
   background-color: #191825;
 }
+
 #application {
   background-color: #191825;
   color: white;
   padding: 1rem;
   height: auto;
 }
+
 .navbar,
 .nav__heading {
   font-size: 3rem;
-  padding: 1rem;
 }
+
 .input__task:focus {
   outline: none;
 }
+
 .input__form,
 .input__task {
   width: 15rem;
@@ -26,6 +29,11 @@ html {
   border: none;
   border-bottom: 5px solid rgba(255, 255, 255, 0.522);
 }
+
 .input__task:hover {
   border-bottom: 5px solid white;
+}
+
+.hidden {
+  display: none;
 }
