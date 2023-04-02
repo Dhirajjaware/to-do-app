@@ -39,6 +39,8 @@ html {
 }
 
 .list {
-  border: 1px solid #fff;
+  border-left: 5px solid rgb(3, 255, 213);
   background-color: #191825;
+  color: #fff;
+  font-weight: 600;
 }
