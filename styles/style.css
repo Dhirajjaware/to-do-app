@@ -2,7 +2,7 @@ html {
   background-color: #191825;
 }
 
-#application {
+#app {
   background-color: #191825;
   color: white;
   padding: 1rem;
@@ -38,9 +38,13 @@ html {
   display: none;
 }
 
-.list {
+#list {
   border-left: 5px solid rgb(3, 255, 213);
   background-color: #191825;
   color: #fff;
   font-weight: 600;
+}
+
+.btn-close {
+  margin-top: 1.2rem;
 }
